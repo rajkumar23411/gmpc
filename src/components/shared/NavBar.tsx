@@ -2,6 +2,7 @@ import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import { NavTags } from "@/lib";
 import { NavLink, useLocation } from "react-router-dom";
+import Logo from "./Logo";
 const Circle = () => {
     return <div className="h-2 w-2 bg-green-600 rounded-full"></div>;
 };
@@ -11,11 +12,7 @@ const NavBar = () => {
     return (
         <div className="flex items-center justify-between px-2 py-4 lg:px-6">
             <div>
-                <img
-                    src="/assets/logo.jpg"
-                    alt="logo"
-                    className="h-full w-28 object-cover mix-blend-normal"
-                />
+                <Logo />
             </div>
             <div>
                 <p

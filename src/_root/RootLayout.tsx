@@ -1,4 +1,3 @@
-import React from "react";
 import TopNavBar from "./../components/shared/TopNavBar";
 import NavBar from "@/components/shared/NavBar";
 
