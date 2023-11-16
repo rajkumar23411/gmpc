@@ -3,7 +3,7 @@ type SocialIconBoxProps = {
 };
 export const SocialIconBox = ({ iconName }: SocialIconBoxProps) => {
     return (
-        <div className="text-sm bg-white h-7 w-7 lg:h-9 lg:w-9 lg:text-lg rounded-md text-green-700 grid-center hover:text-2xl hover:cursor-pointer transition-all duration-150">
+        <div className="text-xs md:text-sm lg:text-base text-white w-6 h-6 md:w-8 md:h-8 bg-pink-600 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-thrice duration-100">
             <i className={iconName} />
         </div>
     );
@@ -11,15 +11,15 @@ export const SocialIconBox = ({ iconName }: SocialIconBoxProps) => {
 
 const TopNavBar = () => {
     return (
-        <div className="bg-green-600 w-full h-max flex-between px-6 py-2 lg:px-8 lg:py-4">
+        <div className="w-full h-max flex-between px-6 py-2 lg:px-8 lg:py-4 bg-pink-100">
             <div className="flex gap-3 lg:gap-6">
                 <SocialIconBox iconName="fab fa-facebook-f" />
                 <SocialIconBox iconName="fab fa-instagram" />
                 <SocialIconBox iconName="fab fa-twitter" />
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-end gap-2">
                 <SocialIconBox iconName="fas fa-phone-alt" />
-                <p className="font-medium text-white hidden md:block">
+                <p className="font-medium text-pink-600 hidden md:block">
                     Appointments: 600 0001 001
                 </p>
             </div>

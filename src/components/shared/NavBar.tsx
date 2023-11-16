@@ -10,7 +10,7 @@ const NavBar = () => {
     const [isBarsClicked, setIsBarsClicked] = useState(false);
     const location = useLocation().pathname;
     return (
-        <div className="flex items-center justify-between px-2 py-4 lg:px-6">
+        <div className="flex items-center justify-between p-4">
             <div>
                 <Logo />
             </div>

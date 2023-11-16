@@ -16,7 +16,7 @@ const MobileMenu = ({ isBarsClicked, setIsBarsClicked }: MobileMenuProps) => {
                     isBarsClicked
                         ? "w-72 opacity-100 left-0"
                         : "w-0 opacity-0 -left-full"
-                } bg-white py-6 transition-all duration-500 ease-in-out`}
+                } bg-white py-6 transition-all duration-500 ease-in-out z-50`}
             >
                 <div className="px-4">
                     <Logo />
