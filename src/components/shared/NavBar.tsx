@@ -19,7 +19,7 @@ const NavBar = () => {
                     className={`fal fa-bars text-3xl md:hidden`}
                     onClick={() => setIsBarsClicked(true)}
                 ></p>
-                <div className="hidden md:flex items-center gap-8 ">
+                <div className="hidden md:flex items-center gap-8">
                     {NavTags.map((tag, index) => {
                         const isActive = location === tag.href;
                         return (

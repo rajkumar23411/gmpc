@@ -1,6 +1,7 @@
 import TopNavBar from "./../components/shared/TopNavBar";
 import NavBar from "@/components/shared/NavBar";
 import Banner from "./../components/shared/Banner";
+import HealthService from "@/components/shared/HealthService";
 
 const RootLayout = () => {
     return (
@@ -8,6 +9,7 @@ const RootLayout = () => {
             <TopNavBar />
             <NavBar />
             <Banner />
+            <HealthService />
         </div>
     );
 };
