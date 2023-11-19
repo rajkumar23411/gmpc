@@ -9,8 +9,11 @@ const Circle = () => {
 const NavBar = () => {
     const [isBarsClicked, setIsBarsClicked] = useState(false);
     const location = useLocation().pathname;
+
     return (
-        <div className="flex items-center justify-between p-4">
+        <div
+            className={`flex items-center w-full justify-between p-4 overflow-hidden bg-white`}
+        >
             <div>
                 <Logo />
             </div>

@@ -2,6 +2,9 @@ import TopNavBar from "./../components/shared/TopNavBar";
 import NavBar from "@/components/shared/NavBar";
 import Banner from "./../components/shared/Banner";
 import HealthService from "@/components/shared/HealthService";
+import AuthSpeech from "@/components/shared/AuthSpeech";
+import FreeService from "@/components/shared/FreeService";
+import QuickFacts from "@/components/shared/QuickFacts";
 
 const RootLayout = () => {
     return (
@@ -10,6 +13,9 @@ const RootLayout = () => {
             <NavBar />
             <Banner />
             <HealthService />
+            <AuthSpeech />
+            <FreeService />
+            <QuickFacts />
         </div>
     );
 };

@@ -30,3 +30,21 @@ export const NavTags = [
         logo: "fal fa-phone-rotary",
     },
 ];
+export const socialTags = [
+    {
+        iconName: "fab fa-facebook-f",
+        link: "https://www.facebook.com/profile.php?id=61550860078979&mibextid=ZbWKwL",
+    },
+    {
+        iconName: "fab fa-instagram",
+        link: "https://instagram.com/gmpc23?igshid=OGQ5ZDc2ODk2ZA==",
+    },
+    {
+        iconName: "fab fa-whatsapp",
+        link: "https://wa.me/6003613726",
+    },
+    {
+        iconName: "fab fa-twitter",
+        link: "https://twitter.com/",
+    },
+];
