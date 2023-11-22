@@ -1,7 +1,7 @@
 const AuthSpeech = () => {
     return (
-        <div className="h-max md:h-[85vh] w-full founder-bg relative flex p-10 md:p-20 gap-10 flex-col-reverse md:flex-row">
-            <div className="md:flex-1">
+        <div className="h-max md:h-[85vh] w-full founder-bg relative flex p-10 md:p-20 gap-10 flex-col-reverse lg:flex-row">
+            <div className="lg:flex-1">
                 <p className="text-xl text-blue-600">From the founder's desk</p>
                 <h1 className="pb-10 pt-2 text-5xl font-sans font-medium">
                     Welcome to <span className="font-semibold">GMPC</span>
@@ -21,7 +21,7 @@ const AuthSpeech = () => {
                     Know More
                 </button>
             </div>
-            <div className="md:flex-[0.5] h-4/5 md:h-full relative group">
+            <div className="lg:flex-[0.5] h-4/5 md:h-full relative group md:mb-10">
                 <div className="absolute -bottom-10 bg-black bg-opacity-90 w-5/6 h-20 left-1/2 -translate-x-1/2 group-hover:top-1/2 group-hover:-translate-y-1/2 group-hover:w-full group-hover:h-full transition-all duration-200  group-hover:bg-opacity-50 ease-linear hidden md:flex-center flex-col rounded-2xl z-20">
                     <h1 className="text-white text-lg  md:text-xl group-hover:text-2xl">
                         Mr. Parash Saikia
@@ -33,7 +33,7 @@ const AuthSpeech = () => {
                 <img
                     src="/assets/ceo-owner.jpg"
                     alt="owner"
-                    className="h-64 md:h-full w-full object-cover rounded-2xl drop-shadow-xl"
+                    className="h-64 md:h-96 lg:h-full w-full object-cover rounded-2xl drop-shadow-xl"
                 />
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MobileMenu from "./MobileMenu";
 import { NavTags } from "@/lib";
 import { NavLink, useLocation } from "react-router-dom";
@@ -10,9 +10,28 @@ const NavBar = () => {
     const [isBarsClicked, setIsBarsClicked] = useState(false);
     const location = useLocation().pathname;
 
+    useEffect(() => {
+        const handleClick = (e: MouseEvent) => {
+            const target = e.target as HTMLElement;
+            const parentElement = target.parentElement as HTMLElement;
+            if (
+                parentElement.classList.contains("mobile-menu") ||
+                target.classList.contains("fa-bars")
+            )
+                setIsBarsClicked(true);
+        };
+
+        document.addEventListener("click", handleClick);
+
+        // Cleanup function to remove the event listener when the component unmounts
+        return () => {
+            document.removeEventListener("click", handleClick);
+        };
+    }, []);
+
     return (
         <div
-            className={`flex items-center w-full justify-between p-4 overflow-hidden bg-white`}
+            className={` flex items-center w-full justify-between p-4 overflow-hidden bg-white`}
         >
             <div>
                 <Logo />
@@ -39,6 +58,9 @@ const NavBar = () => {
                         );
                     })}
                 </div>
+            </div>
+            <div className="bg-[#1d3557] text-white px-8 py-2 rounded-lg cursor-pointer hover:bg-red-950 hidden md:block">
+                Book An Appointment
             </div>
             <MobileMenu
                 isBarsClicked={isBarsClicked}

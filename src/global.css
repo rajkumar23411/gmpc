@@ -99,3 +99,38 @@
     background: linear-gradient(to right, rgba(26, 188, 156, 1), transparent),
         url("/assets/patient-treatment.jpg") center center/cover;
 }
+.triangle-1,
+.triangle-2 {
+    height: 100%;
+    width: 24rem;
+    background: #1d3557;
+}
+.triangle-1 {
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+.triangle-2 {
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+.triangle-3 {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/assets/bg-2.jpg") center center/cover;
+    height: 100%;
+    width: 100%;
+}
+
+.services {
+    background: url("/assets/background3.png") center center/cover;
+    background-repeat: no-repeat;
+}
+
+.ellipse-1 {
+    clip-path: ellipse(64% 53% at 35% 35%);
+}
+.ellipse-2 {
+    clip-path: ellipse(64% 53% at 76% 70%);
+}
+.book_appointment {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/assets/bg-2.jpg") center center/cover;
+}

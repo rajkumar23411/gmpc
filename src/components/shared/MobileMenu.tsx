@@ -9,7 +9,7 @@ const MobileMenu = ({ isBarsClicked, setIsBarsClicked }: MobileMenuProps) => {
     return (
         <>
             {isBarsClicked && (
-                <div className="h-screen w-screen bg-black bg-opacity-60 fixed top-0 left-0 right-0 z-50"></div>
+                <div className="h-screen w-screen bg-black bg-opacity-60 fixed top-0 left-0 right-0 z-50 mobile-menu"></div>
             )}
             <div
                 className={`h-screen fixed top-0 ${
