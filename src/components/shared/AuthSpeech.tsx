@@ -7,15 +7,17 @@ const AuthSpeech = () => {
                     Welcome to <span className="font-semibold">GMPC</span>
                 </h1>
                 <p className="text-lg">
-                    GNRC (formerly known as Guwahati Neurological Research
-                    Centre), the first super specialty healthcare centre in
-                    North East India, was established in 1987 by neurologist Dr.
-                    Nomal Chandra Borah. Born into the family of a marginal
-                    farmer in Sonitpur district of Assam, Dr. Borah has scaled
-                    professional and entrepreneurial heights through the sheer
-                    dint of his intellectual capability and indomitable spirit,
-                    steadfast in his pursuit of delivering ‘Health for All,
-                    Smiles for All’, through his social enterprises.
+                    GMPC ( Gohpur Medicos & Pharma Clinic ) is a
+                    multi-speciality health care unit where we strive to provide
+                    exceptional healthcare service to our valued patients. Our
+                    dedicated team of experienced doctors and medical
+                    professionals is here to ensure your well-being and address
+                    all your healthcare needs.GMP&C is located on a hassle free
+                    connectivity at Kalabari, Gohpur, Biswantha Assam. We
+                    believe that a serene environment plays a crucial role in
+                    the healing process, ensuring a peaceful experience during
+                    your visit. We look forward to your continued support and
+                    guidance.
                 </p>
                 <button className="mt-10 bg-blue-500 px-8 py-4 rounded-lg text-white hover:bg-blue-600 hover:shadow-xl shadow-black">
                     Know More

@@ -37,7 +37,7 @@ const NewsEvents = () => {
                     modules={[Navigation, Pagination, Autoplay]}
                     navigation
                     slidesPerView={1}
-                    autoplay={{ delay: 500 }}
+                    autoplay={{ delay: 10000 }}
                     breakpoints={{
                         650: {
                             slidesPerView: 2,
@@ -47,6 +47,9 @@ const NewsEvents = () => {
                         },
                     }}
                 >
+                    <SwiperSlide>
+                        <NewsEventsCard />
+                    </SwiperSlide>
                     <SwiperSlide>
                         <NewsEventsCard />
                     </SwiperSlide>

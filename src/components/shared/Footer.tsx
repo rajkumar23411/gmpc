@@ -1,6 +1,6 @@
-import { NavTags } from "@/lib";
+import { NavTags, socialTags } from "@/lib";
 import { Link } from "react-router-dom";
-
+import { SocialIconBox } from "./TopNavBar";
 type AddressBoxProps = {
     icon: string;
     text: string;
@@ -27,25 +27,24 @@ const FooterHeading = ({ heading }: { heading: string }) => {
 const Footer = () => {
     return (
         <div className="bg-[#1d3557] h-max flex-center flex-col">
-            <div className="flex flex-col md:flex-row justify-between p-10 gap-6">
+            <div className="flex flex-col md:flex-row justify-between p-8 md:p-10 md:gap-6">
                 <div className="flex-1">
                     <FooterHeading heading="About Us" />
                     <div className="flex flex-col gap-4 py-10">
                         <p className="text-white font-sans">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Magnam velit, natus consequuntur et harum
-                            corporis voluptatem, veniam modi nostrum quas
-                            repellat molestias hic molestiae magni fuga enim
-                            placeat autem suscipit?
+                            GMPC ( Gohpur Medicos & Pharma Clinic ) is a
+                            multi-speciality health care unit where we strive to
+                            provide exceptional healthcare service to our valued
+                            patients.
                         </p>
                         <div className="flex flex-col gap-4 mt-8">
                             <AddressBox
                                 icon="fal fa-map-marker-alt"
-                                text=" Address: Karia, Nalbari, Assam"
+                                text=" Address: Kalabari, Gohpur, Biswanath"
                             />
                             <AddressBox
                                 icon="fal fa-phone"
-                                text="Phone: (+91) 60036 13726"
+                                text="Phone: (+91) 60004 53938"
                             />
                             <AddressBox
                                 icon="fal fa-phone"
@@ -56,13 +55,24 @@ const Footer = () => {
                                 text="Email: gmpcplus2023@gmail.com"
                             />
                         </div>
+                        <div className="flex items-center justify-center md:justify-start gap-4 lg:gap-6 mt-6">
+                            {socialTags.map((tag, index) => (
+                                <SocialIconBox
+                                    key={index}
+                                    iconName={tag.iconName}
+                                    link={tag.link}
+                                    modify={true}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div className="flex-1">
                     <FooterHeading heading="Quick Links" />
                     <div className="py-10 flex flex-col gap-4">
                         {NavTags.map((tag, index) => (
-                            <div
+                            <Link
+                                to={tag.href}
                                 key={index}
                                 className="hover:translate-x-3 cursor-pointer group transition-all duration-150 w-max"
                             >
@@ -70,7 +80,7 @@ const Footer = () => {
                                 <span className="font-sans text-white group-hover:text-red-500">
                                     {tag.name}
                                 </span>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
@@ -103,7 +113,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-white py-4">
+            <div className="text-white py-4 text-center ">
                 &copy; Copyright 2023 | GMPC - All Rights Reserved | Developed
                 By{" "}
                 <Link

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import MobileMenu from "./MobileMenu";
 import { NavTags } from "@/lib";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 const Circle = () => {
     return <div className="h-2 w-2 bg-green-600 rounded-full"></div>;
@@ -59,9 +59,12 @@ const NavBar = () => {
                     })}
                 </div>
             </div>
-            <div className="bg-[#1d3557] text-white px-8 py-2 rounded-lg cursor-pointer hover:bg-red-950 hidden md:block">
+            <Link
+                to={"/appointment"}
+                className="bg-[#1d3557] text-white px-8 py-2 rounded-lg cursor-pointer hover:bg-red-950 hidden md:block"
+            >
                 Book An Appointment
-            </div>
+            </Link>
             <MobileMenu
                 isBarsClicked={isBarsClicked}
                 setIsBarsClicked={setIsBarsClicked}

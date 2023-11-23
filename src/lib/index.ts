@@ -11,7 +11,7 @@ export const NavTags = [
     },
     {
         name: "Services",
-        href: "/projects",
+        href: "/services",
         logo: "fal fa-heartbeat",
     },
     {

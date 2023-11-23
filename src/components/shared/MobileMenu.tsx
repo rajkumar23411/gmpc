@@ -1,5 +1,6 @@
 import { NavTags } from "@/lib";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 
 type MobileMenuProps = {
     isBarsClicked: boolean;
@@ -27,7 +28,8 @@ const MobileMenu = ({ isBarsClicked, setIsBarsClicked }: MobileMenuProps) => {
                 ></div>
                 <div className="flex flex-col mt-6 w-full">
                     {NavTags.map((tag, index) => (
-                        <div
+                        <Link
+                            to={tag.href}
                             key={index}
                             className="flex items-center  w-full px-6 py-3"
                         >
@@ -37,7 +39,7 @@ const MobileMenu = ({ isBarsClicked, setIsBarsClicked }: MobileMenuProps) => {
                             <div className="text-gray-800 text-lg font-medium">
                                 {tag.name}
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
