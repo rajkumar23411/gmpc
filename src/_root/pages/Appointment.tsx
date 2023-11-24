@@ -35,7 +35,7 @@ const Appointment = () => {
                     <div className="flex flex-col gap-4">
                         <h1 className="text-2xl text-main">Health Issue</h1>
                         <div className="flex flex-col gap-4">
-                            <select className="w-full h-14 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            <select className="w-full h-14 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 bg-transparent">
                                 <option
                                     selected
                                     disabled
