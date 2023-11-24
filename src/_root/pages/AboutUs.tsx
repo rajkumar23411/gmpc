@@ -166,7 +166,7 @@ const AboutUs = () => {
                             <b className="text-red-500 font-sans">
                                 Our Vision:{" "}
                             </b>{" "}
-                            "Health for All, Simle for All"
+                            "Your Health, Our Priority"
                         </p>
                         <p className="text-lg font-sans">
                             <b className="text-red-500 font-sans">

@@ -40,7 +40,7 @@ const Footer = () => {
                         <div className="flex flex-col gap-4 mt-8">
                             <AddressBox
                                 icon="fal fa-map-marker-alt"
-                                text=" Address: Kalabari, Gohpur, Biswanath"
+                                text=" Address: Kalabari, Gohpur, Biswanath, 784178"
                             />
                             <AddressBox
                                 icon="fal fa-phone"
