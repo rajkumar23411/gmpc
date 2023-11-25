@@ -18,7 +18,7 @@ export const SocialIconBox = ({
                 modify && modify
                     ? "h-8 w-8"
                     : "w-6 h-6 md:w-8 md:h-8 text-xs md:text-sm lg:text-base"
-            } bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-thrice duration-100`}
+            } bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-infinite duration-150`}
         >
             <Link to={link!} className={iconName} />
         </div>

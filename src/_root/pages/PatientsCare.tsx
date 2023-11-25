@@ -3,7 +3,7 @@ import PageHeading from "@/components/shared/PageHeading";
 const PatientsCare = () => {
     return (
         <div>
-            <PageHeading heading="Patients Care" />
+            <PageHeading heading="Patient's Care" />
         </div>
     );
 };

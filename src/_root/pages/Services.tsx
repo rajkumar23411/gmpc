@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Services = () => {
     return (
         <div>
-            <PageHeading heading="Services" />
+            <PageHeading heading="Our Services" />
             <div className="p-6 md:p-16 lg:p-20 flex flex-col gap-8 custom-bg-1">
                 <TopicHeading heading="Services We Are Providing" />
 

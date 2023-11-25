@@ -63,93 +63,57 @@ const AboutUs = () => {
                                 </h1>
                             </div>
                             <div className="w-full flex flex-col gap-4 text-justify mt-6 md:mt-0">
-                                <p className="font-sans">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. In ducimus debitis,
-                                    cupiditate ut, porro iure modi facere sit
-                                    corporis necessitatibus tenetur aliquid illo
-                                    incidunt eius, explicabo quidem impedit ab
-                                    quo beatae error obcaecati voluptas aut.
-                                    Harum debitis deleniti reprehenderit
-                                    incidunt sunt inventore ea accusamus earum
-                                    dolor recusandae quia expedita laborum,
-                                    possimus illo sapiente fugiat cumque
-                                    consequatur reiciendis explicabo ullam
-                                    voluptatibus tempore iste iusto? Est atque
-                                    voluptatem commodi, eveniet distinctio ea ut
-                                    quaerat impedit sint libero voluptas maiores
-                                    possimus repellendus velit eaque non aliquid
-                                    corrupti laborum, natus soluta mollitia
-                                    tempore. Laborum tempora quas illo
-                                    distinctio. Repellat aperiam mollitia
-                                    distinctio modi explicabo nobis sint magni
-                                    esse accusamus quas fugit, hic illum dolorem
-                                    eligendi beatae tempore, aliquid cupiditate
-                                    eveniet? Dolorum dolores minus magnam sit
-                                    autem culpa id labore delectus minima alias?
-                                    Repellendus quibusdam consectetur, enim
-                                    quasi quod sed assumenda nesciunt inventore
-                                    ab voluptates, consequuntur est cumque.
-                                    Magnam odit saepe pariatur optio consectetur
-                                    numquam eum quam corporis incidunt,
-                                    reprehenderit quod, voluptates quibusdam
-                                    blanditiis excepturi nulla, expedita
-                                    assumenda nisi. Animi doloremque debitis
+                                <p className="font-sans text-lg">
+                                    Welcome to GMPC (Gohpur Medicos & Pharma
+                                    Clinic), a sanctuary for holistic healthcare
+                                    where our unwavering commitment revolves
+                                    around your well-being. As the founder, I
+                                    take great pride in introducing a dedicated
+                                    team of experienced doctors and medical
+                                    professionals who are passionate about
+                                    providing exceptional healthcare services.
                                 </p>
-                                <p className="font-sans">
-                                    iure voluptate non vero esse tenetur libero
-                                    in. Dignissimos consequatur ut, fugit ea,
-                                    debitis corporis doloremque est molestiae
-                                    mollitia quam autem quia ab tenetur beatae
-                                    aliquid ratione modi rem omnis! Optio
-                                    nesciunt quibusdam amet eaque illum dicta!
-                                    Magnam nisi blanditiis adipisci non repellat
-                                    sunt id, eos corrupti laudantium minima
-                                    cumque atque ex accusantium aspernatur,
-                                    fugit molestiae optio, provident temporibus
-                                    minus. Distinctio aliquid nemo harum et
-                                    eveniet a! Enim voluptatum error voluptates
-                                    assumenda eum totam at voluptatem, quidem
-                                    sed ut doloremque sapiente tenetur hic.
-                                    Consequatur minus numquam nemo itaque
-                                    corporis fugiat amet, fuga vel
+                                <p className="font-sans text-lg">
+                                    Our tireless efforts are channeled towards
+                                    staying at the forefront of medical
+                                    advancements, ensuring that you receive
+                                    cutting-edge treatments tailored to your
+                                    unique needs. The state-of-the-art
+                                    facilities at GMPC are meticulously designed
+                                    to offer a seamless and efficient healthcare
+                                    experience, incorporating the latest in
+                                    medical technology. <br />
+                                    <br />
+                                    We understand that healthcare extends beyond
+                                    specific treatments, and thus, GMPC operates
+                                    as a comprehensive healthcare hub. Whether
+                                    you require primary care, specialized
+                                    consultations, or preventive measures, our
+                                    clinic is equipped to address a spectrum of
+                                    healthcare needs under one roof.
                                 </p>
                             </div>
                         </div>
-                        <p className="second-para pt-4 text-justify font-sans">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Ea exercitationem, esse voluptate sed ut
-                            inventore nesciunt similique totam! Ex accusamus
-                            quam soluta dicta officia dignissimos, velit neque
-                            ipsam architecto est! Explicabo porro veritatis,
-                            maiores temporibus eligendi minus, voluptas ex
-                            beatae est saepe suscipit cumque facere
-                            necessitatibus eius soluta fugit, et neque
-                            distinctio velit sapiente! Nihil voluptatem sit
-                            laborum sint animi dicta consectetur possimus
-                            repudiandae ratione laudantium id eaque eligendi
-                            voluptates, sed deserunt? Veniam odio sequi
-                            accusamus error id repudiandae ut. Nemo minus
-                            mollitia provident a tempora, necessitatibus
-                            corporis quibusdam adipisci, officia nobis, ab
-                            dolore! Soluta, facere libero porro maxime odio
-                            nulla tempora minus dolores ex a aspernatur
+                        <p className="second-para pt-4 text-justify font-sans text-lg">
+                            At GMPC, our patient-centric approach places you at
+                            the center of our care plans. Your concerns and
+                            preferences are integral to our decision-making
+                            process, and we believe in fostering open
+                            communication to ensure you are actively involved in
+                            your healthcare journey. <br /> <br />
+                            Conveniently located in Kalabari, Gohpur, Biswantha
+                            Assam, GMPC is easily accessible, acknowledging the
+                            importance of convenience in healthcare access. We
+                            recognize and appreciate the trust you place in us,
+                            and your continued support is the driving force
+                            behind our commitment to continually improve and
+                            enhance our healthcare services.
                         </p>
-                        <p className="third-para pt-6 text-justify font-sans">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. At asperiores odio commodi quibusdam atque
-                            sapiente provident quis, hic officiis iure? Ea
-                            laudantium rerum voluptatum optio quae eius
-                            veritatis harum dolor aliquam a ullam magnam, animi
-                            qui. Doloremque, tenetur! Magni in laborum
-                            temporibus adipisci nemo provident itaque fugit
-                            dolorum alias, explicabo quasi animi natus porro
-                            nobis neque aut officia quos cum magnam ea mollitia.
-                            Voluptas consequuntur tempora cupiditate explicabo
-                            eaque. Laborum impedit ullam fugit. Hic vero quo
-                            fugiat necessitatibus, nemo porro. Amet perferendis
-                            ut nemo vitae voluptates reprehenderit enim.
-                            Molestias nihil reiciendis asperiores voluptatum
+                        <p className="third-para pt-6 text-justify font-sans text-lg">
+                            Thank you for choosing GMPC as your healthcare
+                            partner. We look forward to serving you with
+                            dedication, compassion, and an unwavering commitment
+                            to your health and well-being.
                         </p>
                     </div>
                 </div>

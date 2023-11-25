@@ -24,7 +24,7 @@ const FactsBox = ({ amount, heading, icon }: FactsBoxProps) => {
 
 const QuickFacts = () => {
     return (
-        <div className="p-6 md:p-10 md:py-16 md:px-10 lg:py-20 lg:px-10 relative overflow-hidden bg-slate-100">
+        <div className="p-6 md:p-10 md:py-16 md:px-10 lg:py-20 lg:px-10 relative overflow-hidden bg-slate-100 quick-facts-container">
             <div className="triangle-2 absolute left-0 top-0 -z-0 hidden md:block"></div>
             <div className="flex-center flex-col">
                 <h1 className="text-4xl text-gray-800 font-sans font-medium text-center z-20">
