@@ -9,8 +9,23 @@ const Circle = () => {
 const NavBar = () => {
     const [isBarsClicked, setIsBarsClicked] = useState(false);
     const location = useLocation().pathname;
+    // const [isWindowScrolled, setIsWindowScrolled] = useState(false);
+    // const isWindowScrolledRef = useRef(isWindowScrolled);
 
     useEffect(() => {
+        // const handleScroll = () => {
+        //     if (window.scrollY > 1) {
+        //         console.log("scrolled");
+        //         if (!isWindowScrolledRef.current) {
+        //             setIsWindowScrolled(true);
+        //         }
+        //     } else {
+        //         console.log("not scrolled");
+        //         if (isWindowScrolledRef.current) {
+        //             setIsWindowScrolled(false);
+        //         }
+        //     }
+        // };
         const handleClick = (e: MouseEvent) => {
             const target = e.target as HTMLElement;
             const parentElement = target.parentElement as HTMLElement;
@@ -22,16 +37,17 @@ const NavBar = () => {
         };
 
         document.addEventListener("click", handleClick);
-
+        // window.addEventListener("scroll", handleScroll);
         // Cleanup function to remove the event listener when the component unmounts
         return () => {
             document.removeEventListener("click", handleClick);
+            // window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
     return (
         <div
-            className={` flex items-center w-full justify-between p-4 overflow-hidden bg-white`}
+            className={`flex items-center w-full justify-between p-4 overflow-hidden bg-white`}
         >
             <div>
                 <Logo />

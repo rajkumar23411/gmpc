@@ -134,3 +134,11 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("/assets/bg-2.jpg") center center/cover;
 }
+.custom-bg-1 {
+    background: url("/assets/ab-bg-2.svg") center center/cover;
+    background-repeat: no-repeat;
+}
+.custom-bg-2 {
+    background: url("/assets/ab-bg-4.svg") center center/cover;
+    background-repeat: no-repeat;
+}

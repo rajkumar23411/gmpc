@@ -46,7 +46,7 @@ const HealthService = () => {
                 />
                 <ServiceCard
                     image={"/assets/pharmacy.jpg"}
-                    text="24 x 7 Pharmacy service"
+                    text="24 x 7 Medicine"
                     icon={"fal fa-capsules"}
                 />
             </div>
