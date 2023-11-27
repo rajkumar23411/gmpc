@@ -8,7 +8,7 @@ type ServiceCardProps = {
 const ServiceCard = ({ image, text, icon, classes }: ServiceCardProps) => {
     return (
         <div
-            className={`relative h-80 w-full rounded-xl overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-transparent to-black group md:last:col-span-2 ${classes}`}
+            className={`relative h-80 w-full rounded-xl overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-gradient-to-b from-transparent to-black group md:last:col-span-3 lg:last:col-span-2 ${classes}`}
         >
             <img
                 src={image}

@@ -6,14 +6,14 @@ type FactsBoxProps = {
 
 const FactsBox = ({ amount, heading, icon }: FactsBoxProps) => {
     return (
-        <div className="bg-slate-50 h-60 w-full rounded-2xl flex items-center justify-center gap-6 group relative overflow-hidden hover:shadow-md hover:shadow-gray-300 translate-all ease-in-out duration-150 shadow-lg">
+        <div className="bg-slate-50 h-48 md:h-52 lg:h-60 w-full rounded-2xl flex items-center justify-center gap-6 group relative overflow-hidden hover:shadow-md hover:shadow-gray-300 translate-all ease-in-out duration-150 shadow-lg">
             <div className="absolute top-0 left-0 -rotate-45">
                 <i
                     className={`${icon} text-[10rem] md:text-[7rem] lg:text-[10rem]  text-pink-200 z-0 group-hover:scale-125 transition-all duration-150`}
                 ></i>
             </div>
             <div className="flex flex-col gap-2 z-10">
-                <p className="text-5xl lg:text-6xl font-sans font-semibold text-green-500">
+                <p className="text-4xl lg:text-6xl font-sans font-semibold text-green-500">
                     {amount}
                 </p>
                 <p className="text-2xl text-gray-600 w-56">{heading}</p>
@@ -35,7 +35,7 @@ const QuickFacts = () => {
                 </span>
             </div>
 
-            <div className="pt-10 flex flex-col md:flex-row gap-4">
+            <div className="pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <FactsBox
                     amount="1000+"
                     icon="fad fa-laugh-beam"
