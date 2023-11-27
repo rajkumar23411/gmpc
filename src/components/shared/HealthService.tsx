@@ -12,7 +12,6 @@ const HealthService = () => {
                     understand
                 </h2>
             </div>
-
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 content-center justify-items-center">
                 <ServiceCard
                     image={"/assets/opd-1.jpg"}

@@ -71,6 +71,13 @@ const MobileMenu = ({ isBarsClicked, setIsBarsClicked }: MobileMenuProps) => {
                         );
                     })}
                 </div>
+                <Link
+                    to={"/admin/login"}
+                    className="absolute bottom-10 px-6 flex gap-2 text-lg items-center bg-main text-white py-2 rounded-e-md"
+                >
+                    <i className="fal fa-lock text-2xl text-red-600"></i>
+                    Admin
+                </Link>
             </div>
         </>
     );

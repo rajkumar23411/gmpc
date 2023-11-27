@@ -7,11 +7,26 @@ import Services from "./_root/pages/Services";
 import PatientsCare from "./_root/pages/PatientsCare";
 import Appointment from "./_root/pages/Appointment";
 import { Contact } from "lucide-react";
+import AuthLayout from "./_auth/AuthLayout";
+import SignInForm from "./_auth/forms/SignInForm";
+import DashboardHome from "./_root/dashboard/DashboardHome";
+import ProtectedRoute from "./_auth/ProtectedRoute";
 
 const App = () => {
     return (
         <main className="flex h-screen w-screen">
             <Routes>
+                <Route element={<AuthLayout />}>
+                    <Route path="/admin/login" element={<SignInForm />} />
+                </Route>
+                <Route
+                    path="/admin/dashboard/"
+                    element={
+                        <ProtectedRoute>
+                            <DashboardHome />
+                        </ProtectedRoute>
+                    }
+                />
                 <Route element={<RootLayout />}>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<AboutUs />} />

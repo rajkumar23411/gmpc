@@ -4,7 +4,7 @@ import { NavTags } from "@/lib";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 const Circle = () => {
-    return <div className="h-2 w-2 bg-green-600 rounded-full"></div>;
+    return <div className="h-2 w-2 bg-red-600 rounded-full"></div>;
 };
 const NavBar = () => {
     const [isBarsClicked, setIsBarsClicked] = useState(false);
@@ -65,8 +65,8 @@ const NavBar = () => {
                                 to={tag.href}
                                 key={index}
                                 className={`${
-                                    isActive && "text-green-600 font-medium"
-                                } flex items-center justify-center gap-2 cursor-pointer hover:text-green-600 transition-all duration-150`}
+                                    isActive && "text-red-600 font-medium"
+                                } flex items-center justify-center gap-2 cursor-pointer hover:text-red-600 text-main transition-all duration-150`}
                             >
                                 {isActive && <Circle />}
                                 {tag.name}

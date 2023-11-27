@@ -6,7 +6,7 @@ const Logo = () => {
             <img
                 src="/assets/logo.jpg"
                 alt="logo"
-                className="h-full w-28 lg:w-32 object-cover mix-blend-multiply"
+                className="h-full w-28 sm:w-32 md:w-36 lg:w-40 object-cover mix-blend-multiply"
             />
         </Link>
     );
