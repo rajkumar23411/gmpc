@@ -77,9 +77,9 @@ const NavBar = () => {
             </div>
             <Link
                 to={"/appointment"}
-                className="bg-[#1d3557] text-white px-8 py-2 rounded-lg cursor-pointer hover:bg-red-950 hidden md:block"
+                className="bg-[#1d3557] text-white px-8 py-2 rounded-lg cursor-pointer hover:bg-red-950 hidden lg:block"
             >
-                Book An Appointment
+                Book Appointment
             </Link>
             <MobileMenu
                 isBarsClicked={isBarsClicked}

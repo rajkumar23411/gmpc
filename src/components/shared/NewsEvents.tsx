@@ -4,23 +4,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const NewsEventsCard = () => {
+const NewsEventsCard = ({
+    imageSrc,
+    text,
+    date,
+}: {
+    imageSrc: string;
+    text: string;
+    date: string;
+}) => {
     return (
-        <div className="h-max w-full md:w-96 bg-white">
+        <div className="h-max w-full md:w-96 bg-white drop-shadow-lg rounded-lg overflow-hidden">
             <img
-                src="/assets/img-gmpc-sm-1.jpg"
+                src={imageSrc}
                 alt="gmpc"
                 className="h-80 w-full object-cover"
             />
             <div className="p-3 flex flex-col gap-4">
-                <p className="text-gray-800">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quis laudantium est iure enim ab aspernatur ducimus...
-                </p>
-                <span className="text-sm text-pink-600">Date: 22-11-2023</span>
-                <button className="text-blue-600 cursor-pointer hover:text-blue-700 w-max text-lg">
+                <p className="text-gray-800">{text}...</p>
+                <span className="text-sm text-pink-600">Date: {date}</span>
+                {/* <button className="text-blue-600 cursor-pointer hover:text-blue-700 w-max text-lg">
                     Read more
-                </button>
+                </button> */}
             </div>
         </div>
     );
@@ -30,7 +35,9 @@ const NewsEvents = () => {
         <div className="h-max w-full relative bg-gray-100 px-4 py-10 md:p-10">
             <div className="triangle-1 absolute right-0 top-0 -z-0 hidden md:block"></div>
             <div className="z-20 flex-center md:block">
-                <h1 className="text-4xl lg:text-5xl px-10">Our Top Stories.</h1>
+                <h1 className="text-4xl lg:text-5xl px-10 text-main">
+                    Our Top Stories.
+                </h1>
             </div>
             <div className="px-4 py-10 md:p-10">
                 <Swiper
@@ -48,16 +55,25 @@ const NewsEvents = () => {
                     }}
                 >
                     <SwiperSlide>
-                        <NewsEventsCard />
+                        <NewsEventsCard
+                            imageSrc="/assets/bg-health-check.jpg"
+                            text="free heath checkup"
+                            date="14-11-2023"
+                        />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <NewsEventsCard />
+                        <NewsEventsCard
+                            imageSrc="/assets/img-gmpc-diwali.jpg"
+                            text="diwali at gmpc"
+                            date="12-11-2023"
+                        />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <NewsEventsCard />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <NewsEventsCard />
+                        <NewsEventsCard
+                            imageSrc="/assets/bg-inaguration.jpg"
+                            text="GMPC inaguration"
+                            date="11-09-2023"
+                        />
                     </SwiperSlide>
                 </Swiper>
             </div>

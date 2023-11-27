@@ -55,9 +55,9 @@ const TopNavBar = () => {
             <div className="flex items-center justify-end gap-4">
                 <a href={"tel:+916000453938"} className="flex-center gap-2">
                     <div className="text-xs md:text-sm lg:text-base text-white w-6 h-6 md:w-8 md:h-8 bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-thrice duration-100">
-                        <i className="fas fa-phone-alt" />
+                        <i className="fas fa-phone-alt text-sm" />
                     </div>
-                    <p className="font-medium text-red-500 hidden md:block">
+                    <p className="font-medium text-sm text-red-500 hidden md:block">
                         Appointments: (+91) 60004 53938
                     </p>
                 </a>
