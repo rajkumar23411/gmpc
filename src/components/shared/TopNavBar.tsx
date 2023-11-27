@@ -17,7 +17,7 @@ export const SocialIconBox = ({
             className={` text-white ${
                 modify && modify
                     ? "h-8 w-8"
-                    : "w-6 h-6 md:w-8 md:h-8 text-xs md:text-sm lg:text-base"
+                    : "w-6 h-w-6 md:w-7 md:h-7 text-xs md:text-sm lg:text-base"
             } bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-infinite duration-150`}
         >
             <Link to={link!} className={iconName} />
@@ -39,11 +39,11 @@ const TopNavBar = () => {
 
     return (
         <div
-            className={`w-full h-12 ${
+            className={`w-full h-10 ${
                 hide ? "h-0 opacity-0" : "flex-between"
-            } px-6 py-2 lg:px-8 bg-red-100 bg-opacity-20 transition-all duration-150 ease-in-out`}
+            } px-6 py-2 lg:px-8 bg-red-300 bg-opacity-20 transition-all duration-150 ease-in-out`}
         >
-            <div className="flex gap-3 lg:gap-6">
+            <div className="flex gap-3 lg:gap-4">
                 {socialTags.map((tag, index) => (
                     <SocialIconBox
                         key={index}
@@ -54,7 +54,7 @@ const TopNavBar = () => {
             </div>
             <div className="flex items-center justify-end gap-4">
                 <a href={"tel:+916000453938"} className="flex-center gap-2">
-                    <div className="text-xs md:text-sm lg:text-base text-white w-6 h-6 md:w-8 md:h-8 bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-thrice duration-100">
+                    <div className="text-xs md:text-sm lg:text-base text-white w-6 h-w-6 md:w-7 md:h-7 bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-thrice duration-100">
                         <i className="fas fa-phone-alt text-sm" />
                     </div>
                     <p className="font-medium text-sm text-red-500 hidden md:block">
