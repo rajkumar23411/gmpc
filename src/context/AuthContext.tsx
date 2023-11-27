@@ -3,43 +3,54 @@ import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import { auth } from "@/lib/firebase/config";
 import { useNavigate } from "react-router-dom";
 
-type ICredentails = {
+type ICredentials = {
     email: string;
     password: string;
 };
 
-const INITIALSTATE = {
-    user: {
-        email: "",
-    },
+type IUser = {
+    email: string | null | undefined;
+};
+
+type IAuthContext = {
+    user: IUser | null;
+    setUser: React.Dispatch<React.SetStateAction<IUser | null>>;
+    isLoading: boolean;
+    isAuth: boolean;
+    setIsAuth: React.Dispatch<React.SetStateAction<boolean>>;
+    logIn: (credentials: ICredentials) => Promise<void>;
+};
+
+const INITIAL_STATE: IAuthContext = {
+    user: null,
     setUser: () => {},
     isLoading: false,
     isAuth: false,
     setIsAuth: () => {},
-    logIn: (credentials: ICredentails) => Promise.resolve(),
+    logIn: async () => {},
 };
 
-const AuthContext = createContext(INITIALSTATE);
+const AuthContext = createContext<IAuthContext>(INITIAL_STATE);
 
-const AuthProvider = ({ children }: { children: React.ReactNode }) => {
-    const [user, setUser] = useState({});
+const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
+    children,
+}) => {
+    const [user, setUser] = useState<IUser | null>(null);
     const [isLoading, setIsLoading] = useState(false);
     const [isAuth, setIsAuth] = useState(false);
     const navigate = useNavigate();
 
-    const logIn = async (credentials: ICredentails) => {
+    const logIn = async (credentials: ICredentials) => {
         setIsLoading(true);
         try {
             const { email, password } = credentials;
 
             await signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
-                    const user = userCredential.user;
-                    if (user) {
+                    const loggedInUser = userCredential.user;
+                    if (loggedInUser) {
                         setIsAuth(true);
-                        setUser({
-                            email: user.email,
-                        });
+                        setUser({ email: loggedInUser.email });
                         navigate("/admin/dashboard");
                     } else {
                         setIsAuth(false);
@@ -51,7 +62,7 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
                     console.log(errorCode, errorMessage);
                 });
         } catch (error) {
-            console.log(error);
+            console.error(error);
         } finally {
             setIsLoading(false);
         }
@@ -60,35 +71,32 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     const checkAuthUser = async () => {
         setIsLoading(true);
         try {
-            await onAuthStateChanged(auth, (user) => {
-                if (user) {
+            await onAuthStateChanged(auth, (loggedInUser) => {
+                if (loggedInUser) {
                     setIsAuth(true);
-                    setUser({
-                        email: user.email,
-                    });
-                    return true;
+                    setUser({ email: loggedInUser.email });
                 } else {
                     setIsAuth(false);
+                    setUser(null);
                 }
             });
-            return false;
         } catch (error) {
-            console.log(error);
+            console.error(error);
         } finally {
             setIsLoading(false);
         }
     };
+
     useEffect(() => {
         checkAuthUser();
     }, []);
 
-    const value = {
+    const value: IAuthContext = {
         user,
         setUser,
         isLoading,
         isAuth,
         setIsAuth,
-        checkAuthUser,
         logIn,
     };
 
@@ -96,5 +104,6 @@ const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
     );
 };
+
 export default AuthProvider;
 export const useUserContext = () => useContext(AuthContext);
