@@ -41,7 +41,7 @@ const AuthSpeech = () => {
                     <h1 className="font-sans font-medium text-lg lg:text-xl sm:group-hover:text-xl md:group-hover:text-2xl  lg:group-hover:text-3xl text-white">
                         Dr<sub>x</sub> Parash Saikia{" "}
                         <span className="font-sans font-normal text-base lg:text-lg">
-                            , CEO
+                            - CEO, GMPC
                         </span>
                     </h1>
                 </div>
