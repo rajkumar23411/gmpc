@@ -18,6 +18,8 @@ type IAuthContext = {
     isLoading: boolean;
     isAuth: boolean;
     setIsAuth: React.Dispatch<React.SetStateAction<boolean>>;
+    error: string | null | undefined;
+    setError: React.Dispatch<React.SetStateAction<string>>;
     logIn: (credentials: ICredentials) => Promise<void>;
 };
 
@@ -28,6 +30,8 @@ const INITIAL_STATE: IAuthContext = {
     isAuth: false,
     setIsAuth: () => {},
     logIn: async () => {},
+    error: "",
+    setError: () => {},
 };
 
 const AuthContext = createContext<IAuthContext>(INITIAL_STATE);
@@ -38,6 +42,7 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     const [user, setUser] = useState<IUser | null>(null);
     const [isLoading, setIsLoading] = useState(false);
     const [isAuth, setIsAuth] = useState(false);
+    const [error, setError] = useState("");
     const navigate = useNavigate();
 
     const logIn = async (credentials: ICredentials) => {
@@ -51,18 +56,28 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
                     if (loggedInUser) {
                         setIsAuth(true);
                         setUser({ email: loggedInUser.email });
-                        navigate("/admin/dashboard");
+                        navigate("/admin/dashboard/");
                     } else {
                         setIsAuth(false);
                     }
                 })
                 .catch((error) => {
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
-                    console.log(errorCode, errorMessage);
+                    switch (error.code) {
+                        case "auth/too-many-requests":
+                            setError(
+                                "Too many requests, please try again later"
+                            );
+                            break;
+                        case "auth/invalid-login-credentials":
+                            setError("Invalid login credentials");
+                            break;
+                        default:
+                            setError("Something went wrong, please try again");
+                            break;
+                    }
                 });
         } catch (error) {
-            console.error(error);
+            return setError("Something went wrong, please try again");
         } finally {
             setIsLoading(false);
         }
@@ -78,6 +93,7 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
                 } else {
                     setIsAuth(false);
                     setUser(null);
+                    navigate("/admin/login");
                 }
             });
         } catch (error) {
@@ -98,6 +114,8 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
         isAuth,
         setIsAuth,
         logIn,
+        error,
+        setError,
     };
 
     return (
