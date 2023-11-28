@@ -47,7 +47,7 @@ const NavBar = () => {
 
     return (
         <div
-            className={`flex items-center w-full justify-between px-8 py-4 overflow-hidden bg-white`}
+            className={`flex items-center w-full justify-between px-6 py-4 md:px-8 md:py-4 overflow-hidden bg-white`}
         >
             <div>
                 <Logo />

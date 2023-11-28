@@ -25,7 +25,7 @@ const AuthSpeech = () => {
                 <div className="mt-14 md:mt-20">
                     <Link
                         to="/about"
-                        className=" bg-blue-800 px-8 py-4 rounded-lg text-white hover:bg-blue-900 hover:shadow-xl shadow-black"
+                        className=" bg-blue-800 px-6 py-2 md:px-8 md:py-4 rounded-lg text-white hover:bg-blue-900 hover:shadow-xl shadow-black"
                     >
                         Know More
                     </Link>
@@ -39,7 +39,7 @@ const AuthSpeech = () => {
                 />
                 <div className="absolute bottom-0 left-0 right-0 w-full h-16 md:h-20 lg:h-24 group-hover:h-full flex-center bg-gradient-to-b from-transparent to-main transition-all duration-150 ease-in-out">
                     <h1 className="font-sans font-medium text-lg lg:text-xl sm:group-hover:text-xl md:group-hover:text-2xl  lg:group-hover:text-3xl text-white">
-                        Dr<sub>x</sub> Parash Saikia{" "}
+                        DR<sub>x</sub> Parash Saikia{" "}
                         <span className="font-sans font-normal text-base lg:text-lg">
                             - CEO, GMPC
                         </span>

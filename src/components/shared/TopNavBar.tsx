@@ -17,7 +17,7 @@ export const SocialIconBox = ({
             className={` text-white ${
                 modify && modify
                     ? "h-8 w-8"
-                    : "w-6 h-w-6 md:w-7 md:h-7 text-xs md:text-sm lg:text-base"
+                    : "w-6 h-6 md:w-7 md:h-7 text-xs md:text-sm lg:text-base"
             } bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-infinite duration-150`}
         >
             <Link to={link!} className={iconName} />
@@ -54,8 +54,8 @@ const TopNavBar = () => {
             </div>
             <div className="flex items-center justify-end gap-4">
                 <a href={"tel:+916000453938"} className="flex-center gap-2">
-                    <div className="text-xs md:text-sm lg:text-base text-white w-6 h-w-6 md:w-7 md:h-7 bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-thrice duration-100">
-                        <i className="fas fa-phone-alt text-sm" />
+                    <div className=" text-white w-6 h-6 md:w-7 md:h-7 bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-thrice duration-100">
+                        <i className="fas fa-phone-alt text-xs md:text-sm lg:text-base" />
                     </div>
                     <p className="font-medium text-sm text-red-500 hidden md:block">
                         Appointments: (+91) 60004 53938

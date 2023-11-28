@@ -27,7 +27,7 @@ const QuickFacts = () => {
         <div className="p-6 md:p-10 md:py-16 md:px-10 lg:py-20 lg:px-10 relative overflow-hidden bg-slate-100 quick-facts-container">
             <div className="triangle-2 absolute left-0 top-0 -z-0 hidden md:block"></div>
             <div className="flex flex-col justify-end items-end">
-                <h1 className="text-4xl lg:text-5xl text-main font-sans font-medium text-center z-20">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl text-main font-sans font-medium text-center z-20">
                     Why to choose <span>GMPC.</span>
                 </h1>
                 <span className="text-red-700 text-base font-light md:text-xl">

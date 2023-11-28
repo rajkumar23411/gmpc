@@ -4,7 +4,7 @@ const HealthService = () => {
         <div className="flex-center flex-col gap-10 px-6 py-10 lg:p-10 overflow-hidden relative services">
             <div className="triangle-1 absolute right-0 top-0 -z-0 hidden md:block"></div>
             <div className="text-left w-full">
-                <h1 className="text-4xl lg:text-5xl font-medium text-main">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium text-main">
                     Health Service for you
                 </h1>
                 <h2 className="text-base md:text-lg text-red-600">

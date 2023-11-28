@@ -58,8 +58,8 @@ const AboutUs = () => {
                                     alt="founder"
                                     className="h-80 w-80 md:w-96 object-cover pt-2"
                                 />
-                                <h1 className="text-xl font-sans font-bold text-center mt-4">
-                                    Dr<sub>x</sub> Parash Saikia
+                                <h1 className="text-xl font-medium text-main text-center mt-4">
+                                    DR<sub>x</sub> Parash Saikia
                                 </h1>
                             </div>
                             <div className="w-full flex flex-col gap-4 text-justify mt-6 md:mt-0">
@@ -168,7 +168,7 @@ const AboutUs = () => {
                     <TopicHeading heading="Message From CEO" />
                     <div className="mt-10 font-sans">
                         <h1 className="font-sans text-lg font-medium">
-                            Dr<sub>x</sub>. Parash Saikia
+                            DR<sub>x</sub>. Parash Saikia
                         </h1>
                         <span className="font-sans">CEO, GMPC</span>
                         <p className="font-sans mt-10 text-lg">
