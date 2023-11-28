@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const AuthSpeech = () => {
     return (
-        <div className="h-max md:h-max w-full founder-bg relative flex p-10 lg:p-20 gap-10 flex-col-reverse md:flex-row lg:flex-row">
+        <div className="h-max md:h-max w-full founder-bg relative flex p-6 md:p-14 lg:p-20 gap-10 flex-col-reverse md:flex-row lg:flex-row">
             <div className="md:flex-[0.9] lg:flex-1">
                 <h1 className="pb-10 pt-2 text-4xl lg:text-5xl font-sans text-main font-medium">
                     Welcome to <span className="font-medium">GMPC</span>
                 </h1>
-                <p className="text-lg font-sans text-justify">
+                <p className="text-base lg:text-lg font-sans text-justify">
                     <b className="font-sans text-base lg:text-lg text-main">
                         GMPC ( Gohpur Medicos & Pharma Clinic )
                     </b>{" "}
@@ -41,7 +41,7 @@ const AuthSpeech = () => {
                     <h1 className="font-sans font-medium text-lg lg:text-xl sm:group-hover:text-xl md:group-hover:text-2xl  lg:group-hover:text-3xl text-white">
                         Dr<sub>x</sub> Parash Saikia{" "}
                         <span className="font-sans font-normal text-base lg:text-lg">
-                            (DPharm, BSc)
+                            , CEO
                         </span>
                     </h1>
                 </div>
