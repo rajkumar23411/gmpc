@@ -8,10 +8,13 @@ import PatientsCare from "./_root/pages/PatientsCare";
 import Appointment from "./_root/pages/Appointment";
 import AuthLayout from "./_auth/AuthLayout";
 import SignInForm from "./_auth/forms/SignInForm";
-import DashboardHome from "./_root/dashboard/DashboardHome";
+import DashboardHome from "./_root/dashboard/pages/DashboardHome";
 import ProtectedRoute from "./_auth/ProtectedRoute";
 import Contact from "./_root/pages/Contact";
 import { useEffect } from "react";
+import DashboardLayout from "./_root/dashboard/DashboardLayout";
+import DashboardAppointments from "./_root/dashboard/pages/DashboardAppointments";
+import DashboardQueries from "./_root/dashboard/pages/DashboardQueries";
 
 const App = () => {
     const { pathname } = useLocation();
@@ -36,14 +39,7 @@ const App = () => {
                 <Route element={<AuthLayout />}>
                     <Route path="/admin/login" element={<SignInForm />} />
                 </Route>
-                <Route
-                    path="/admin/dashboard/"
-                    element={
-                        <ProtectedRoute>
-                            <DashboardHome />
-                        </ProtectedRoute>
-                    }
-                />
+
                 <Route element={<RootLayout />}>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<AboutUs />} />
@@ -51,6 +47,27 @@ const App = () => {
                     <Route path="/care" element={<PatientsCare />} />
                     <Route path="/appointment" element={<Appointment />} />
                     <Route path="/contact" element={<Contact />} />
+                </Route>
+
+                <Route
+                    element={
+                        <ProtectedRoute>
+                            <DashboardLayout />
+                        </ProtectedRoute>
+                    }
+                >
+                    <Route
+                        path="/admin/dashboard/"
+                        element={<DashboardHome />}
+                    />
+                    <Route
+                        path="/admin/dashboard/appointments"
+                        element={<DashboardAppointments />}
+                    />
+                    <Route
+                        path="/admin/dashboard/query"
+                        element={<DashboardQueries />}
+                    />
                 </Route>
             </Routes>
         </main>
