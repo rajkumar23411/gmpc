@@ -93,7 +93,7 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
                 } else {
                     setIsAuth(false);
                     setUser(null);
-                    navigate("/admin/login");
+                    navigate("/");
                 }
             });
         } catch (error) {
