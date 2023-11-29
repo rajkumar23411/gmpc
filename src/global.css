@@ -135,7 +135,7 @@
     clip-path: ellipse(64% 53% at 76% 70%);
 }
 .book_appointment {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url("/assets/bg-2.jpg") center center/cover;
 }
 .custom-bg-1 {

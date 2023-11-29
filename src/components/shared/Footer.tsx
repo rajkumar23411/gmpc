@@ -90,22 +90,22 @@ const Footer = () => {
                         <input
                             type="text"
                             placeholder="Name*"
-                            className="w-full h-12 pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none"
+                            className="w-full h-12 pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none outline-none focus:border-red-500"
                         />
                         <input
                             type="text"
                             placeholder="Phone*"
-                            className="w-full h-12 pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none"
+                            className="w-full h-12 pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none outline-none focus:border-red-500"
                         />
                         <input
                             type="text"
                             placeholder="Email*"
-                            className="w-full h-12 pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none"
+                            className="w-full h-12 pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none outline-none focus:border-red-500"
                         />
                         <textarea
                             rows={5}
                             placeholder="Your Query*"
-                            className="w-full pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none"
+                            className="w-full pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none outline-none focus:border-red-500"
                         />
                         <button className="bg-red-600 h-12 font-medium rounded-lg uppercase text-white font-sans hover:bg-red-700">
                             Send Query

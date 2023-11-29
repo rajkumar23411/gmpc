@@ -23,7 +23,7 @@ const SignInForm = () => {
                 setError("");
             }, 5000);
         }
-    }, [error]);
+    }, [error, setError]);
     return (
         <div className="flex-center flex-col">
             <Link to="/">
