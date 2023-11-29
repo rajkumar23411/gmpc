@@ -34,7 +34,7 @@ const DashboardQueries = () => {
                     Loading...
                 </div>
             ) : data.length === 0 ? (
-                <div className="py-20 font-sans text-center text-xl">
+                <div className="py-20 font-sans text-center text-xl w-full">
                     No queries to show!
                 </div>
             ) : (
