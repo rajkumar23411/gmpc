@@ -36,7 +36,9 @@ const DashboardAppointments = () => {
                     Loading...
                 </div>
             ) : data.length === 0 ? (
-                <div className="py-20 font-sans">No appointments to show!</div>
+                <div className="py-20 font-sans text-center text-xl">
+                    No appointments to show!
+                </div>
             ) : (
                 <Table>
                     <TableHeader>

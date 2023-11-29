@@ -34,7 +34,9 @@ const DashboardQueries = () => {
                     Loading...
                 </div>
             ) : data.length === 0 ? (
-                <div className="py-20 font-sans">No queries to show!</div>
+                <div className="py-20 font-sans text-center text-xl">
+                    No queries to show!
+                </div>
             ) : (
                 <Table>
                     <TableHeader>
