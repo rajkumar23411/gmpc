@@ -135,7 +135,7 @@ const Appointment = () => {
         if (message.type === "success") {
             setTimeout(() => {
                 navigate("/");
-            }, 3000);
+            }, 6000);
         }
     }, [message.type, setMessage, navigate]);
 
