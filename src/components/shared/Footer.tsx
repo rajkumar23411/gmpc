@@ -1,6 +1,7 @@
 import { NavTags, socialTags } from "@/lib";
 import { Link } from "react-router-dom";
 import { SocialIconBox } from "./TopNavBar";
+import QueryForm from "../forms/QueryForm";
 type AddressBoxProps = {
     icon: string;
     text: string;
@@ -86,31 +87,7 @@ const Footer = () => {
                 </div>
                 <div className="flex-1">
                     <FooterHeading heading="Post Your Query" />
-                    <div className="pt-10 flex flex-col gap-4">
-                        <input
-                            type="text"
-                            placeholder="Name*"
-                            className="w-full h-12 pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none outline-none focus:border-red-500"
-                        />
-                        <input
-                            type="text"
-                            placeholder="Phone*"
-                            className="w-full h-12 pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none outline-none focus:border-red-500"
-                        />
-                        <input
-                            type="text"
-                            placeholder="Email*"
-                            className="w-full h-12 pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none outline-none focus:border-red-500"
-                        />
-                        <textarea
-                            rows={5}
-                            placeholder="Your Query*"
-                            className="w-full pl-2 rounded-lg bg-transparent border border-white placeholder:text-red-500 text-white resize-none outline-none focus:border-red-500"
-                        />
-                        <button className="bg-red-600 h-12 font-medium rounded-lg uppercase text-white font-sans hover:bg-red-700">
-                            Send Query
-                        </button>
-                    </div>
+                    <QueryForm />
                 </div>
             </div>
             <div className="text-white py-4 text-center ">

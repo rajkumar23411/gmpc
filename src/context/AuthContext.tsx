@@ -56,7 +56,7 @@ const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
                     if (loggedInUser) {
                         setIsAuth(true);
                         setUser({ email: loggedInUser.email });
-                        navigate("/admin/dashboard/");
+                        navigate("/admin/dashboard/appointments/");
                     } else {
                         setIsAuth(false);
                     }

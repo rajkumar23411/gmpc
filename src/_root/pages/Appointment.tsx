@@ -12,7 +12,7 @@ interface IInput {
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-interface IMessage {
+export interface IMessage {
     type: "success" | "error" | null | undefined | "";
     text: string | "";
 }

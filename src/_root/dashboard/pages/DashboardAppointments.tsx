@@ -13,10 +13,15 @@ import { useEffect, useState } from "react";
 
 const DashboardAppointments = () => {
     const [data, setData] = useState<DocumentData>([]);
+    const [loading, setLoading] = useState(false);
     const fetchData = async () => {
+        setLoading(true);
         const response = await fetchAppointmentData();
 
-        if (response) setData(response);
+        if (response) {
+            setData(response);
+            setLoading(false);
+        }
     };
 
     useEffect(() => {
@@ -26,10 +31,12 @@ const DashboardAppointments = () => {
     return (
         <div>
             <PageHeading heading="Customer Appointments" />
-            {data.length === 0 ? (
-                <h1 className="flex-center py-20 text-lg md:text-xl">
-                    No appointments to show
-                </h1>
+            {loading ? (
+                <div className="text-xl font-sans text-center py-20 animate-pulse animate-infinite">
+                    Loading...
+                </div>
+            ) : data.length === 0 ? (
+                <div className="py-20 font-sans">No appointments to show!</div>
             ) : (
                 <Table>
                     <TableHeader>
@@ -45,8 +52,6 @@ const DashboardAppointments = () => {
                     </TableHeader>
                     <TableBody>
                         {data.map((data: DocumentData, indx: number) => {
-                            console.log(data.name);
-
                             return (
                                 <TableRow key={indx}>
                                     <TableCell className="font-medium text-red-600 ">

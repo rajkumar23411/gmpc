@@ -2,10 +2,10 @@ import Logo from "@/components/shared/Logo";
 import { Link, useLocation } from "react-router-dom";
 
 const dashboardTags = [
-    {
-        name: "Home",
-        link: "/admin/dashboard/",
-    },
+    // {
+    //     name: "Home",
+    //     link: "/admin/dashboard/",
+    // },
     {
         name: "Appointments",
         link: "/admin/dashboard/appointments/",
