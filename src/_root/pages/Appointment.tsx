@@ -168,11 +168,6 @@ const Appointment = () => {
                     className="w-full h-full md:w-[80%] lg:w-[35rem] flex flex-col gap-6 px-6 backdrop-blur-xl py-10"
                     onSubmit={handleAppointmentSubmit}
                 >
-                    {message.type === "error" && (
-                        <div className="h-12 bg-red-200 font-sans font-medium bg-opacity-30 text-red-600 flex-center rounded-lg border border-red-400 animate-shake animate-twice animate-duration-200 animate-ease-in">
-                            {message.text}
-                        </div>
-                    )}
                     <div className="flex flex-col gap-4">
                         <h1 className="text-2xl text-main">
                             Personal Information
@@ -240,6 +235,11 @@ const Appointment = () => {
                             ></textarea>
                         </div>
                     </div>
+                    {message.type === "error" && (
+                        <div className="h-12 bg-red-200 font-sans font-medium bg-opacity-30 text-red-600 flex-center rounded-lg border border-red-400 animate-shake animate-twice animate-duration-200 animate-ease-in">
+                            {message.text}
+                        </div>
+                    )}
                     {loading ? (
                         <button
                             type="submit"
