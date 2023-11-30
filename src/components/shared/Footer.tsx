@@ -5,15 +5,26 @@ import QueryForm from "../forms/QueryForm";
 type AddressBoxProps = {
     icon: string;
     text: string;
+    textColor?: "dark" | "light";
 };
 
-const AddressBox = ({ icon, text }: AddressBoxProps) => {
+export const AddressBox = ({ icon, text, textColor }: AddressBoxProps) => {
     return (
         <div className="flex items-center gap-2">
             <p className="h-8 w-8 bg-red-500 rounded-full flex-center">
                 <i className={`${icon} text-white`}></i>
             </p>
-            <p className="text-white font-sans">{text}</p>
+            <p
+                className={`font-sans ${
+                    textColor === "dark"
+                        ? "text-gray-800"
+                        : textColor === "light"
+                        ? "text-white"
+                        : "text-white"
+                }`}
+            >
+                {text}
+            </p>
         </div>
     );
 };
@@ -48,7 +59,7 @@ const Footer = () => {
                                 text="Phone: (+91) 60004 53938"
                             />
                             <AddressBox
-                                icon="fal fa-phone"
+                                icon="fal fa-siren-on"
                                 text="Emergency: (+91) 60036 13726"
                             />
                             <AddressBox
