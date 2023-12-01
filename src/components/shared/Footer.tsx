@@ -101,9 +101,9 @@ const Footer = () => {
                     <QueryForm />
                 </div>
             </div>
-            <div className="text-white py-4 text-center ">
-                &copy; Copyright 2023 | GMPC - All Rights Reserved | Developed
-                By{" "}
+            <div className="text-white py-4 text-center  text-xs md:text-sm">
+                &copy; Copyright 2023 | GMPC - All Rights Reserved | Design &
+                Developed By{" "}
                 <Link
                     to={
                         "https://www.linkedin.com/in/rajkumar-kalita-9a854a270/"
