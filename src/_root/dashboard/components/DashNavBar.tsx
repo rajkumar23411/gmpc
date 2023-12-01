@@ -19,10 +19,10 @@ const dashboardTags = [
 const DashNavBar = () => {
     const { pathname } = useLocation();
     return (
-        <div className="flex justify-between py-2 px-8">
+        <div className="flex justify-between py-2 px-4 md:px-8">
             <Logo />
             <div className="flex-center">
-                <ul className="flex gap-8">
+                <ul className="flex gap-6 md:gap-8">
                     {dashboardTags.map((tag, index) => {
                         const isActive = pathname === tag.link;
                         return (

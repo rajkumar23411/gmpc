@@ -29,6 +29,14 @@ const DashboardQueries = () => {
     return (
         <div>
             <PageHeading heading="Customer Queries" />
+            <div className="w-full flex justify-between p-2">
+                <div className="font-sans font-medium">
+                    Total Queries: {data?.length}
+                </div>
+                <button className="text-green-600" onClick={fetchData}>
+                    Refresh
+                </button>
+            </div>
             {loading ? (
                 <div className="text-xl font-sans text-center py-20 animate-pulse animate-infinite">
                     Loading...

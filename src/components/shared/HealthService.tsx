@@ -8,19 +8,19 @@ const HealthService = () => {
                     Health Service for you
                 </h1>
                 <h2 className="text-base md:text-lg text-red-600">
-                    Our affordable health services! Because we care and
-                    understand
+                    Our affordable and efficient health services! Because we
+                    care and understand
                 </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 content-center justify-items-center">
                 <ServiceCard
                     image={"/assets/opd-1.jpg"}
-                    text="Multispecality OPD"
+                    text="Multispeciality OPD"
                     icon={"fal fa-user-md"}
                 />
                 <ServiceCard
                     image={"/assets/dental-clinic-service.jpg"}
-                    text="Dental Clicnic"
+                    text="Dental Clinic"
                     icon={"fal fa-tooth"}
                 />
                 <ServiceCard

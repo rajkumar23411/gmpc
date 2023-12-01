@@ -17,7 +17,6 @@ const DashboardAppointments = () => {
     const fetchData = async () => {
         setLoading(true);
         const response = await fetchAppointmentData();
-
         if (response) {
             setData(response);
             setLoading(false);
@@ -26,11 +25,23 @@ const DashboardAppointments = () => {
 
     useEffect(() => {
         fetchData();
+        const timerId = setInterval(() => {
+            fetchData();
+        }, 5 * 60 * 1000);
+        return () => clearInterval(timerId);
     }, []);
 
     return (
         <div>
             <PageHeading heading="Customer Appointments" />
+            <div className="w-full flex justify-between p-2">
+                <div className="font-sans font-medium">
+                    Total Appointments: {data?.length}
+                </div>
+                <button className="text-green-600" onClick={fetchData}>
+                    Refresh
+                </button>
+            </div>
             {loading ? (
                 <div className="text-xl font-sans text-center py-20 animate-pulse animate-infinite">
                     Loading...

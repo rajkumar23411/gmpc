@@ -89,7 +89,11 @@
 
 .banner-1 {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("/assets/doctors.png") center center/cover;
+        url("/assets/banner-1.png") center center/cover;
+}
+.banner-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("/assets/banner-2.jpg") center center/cover;
 }
 .founder-bg {
     background: url("/assets/ab-bg-1.jpg") center center/cover;
