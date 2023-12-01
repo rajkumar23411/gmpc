@@ -55,18 +55,27 @@ const Banner1 = () => {
 
 const Banner = () => {
     return (
-        <Swiper
-            modules={[Autoplay]}
-            slidesPerView={1}
-            autoplay={{ delay: 5000 }}
-        >
-            <SwiperSlide>
-                <Banner1 />
-            </SwiperSlide>
-            <SwiperSlide>
-                <Banner2 />
-            </SwiperSlide>
-        </Swiper>
+        <div className="relative">
+            <Link
+                to={"/appointment"}
+                className="absolute left-1/2 -translate-x-1/2 z-10 -bottom-6 bg-white text-main px-4 py-2 w-max  md:px-6 md:py-3 drop-shadow-xl rounded-lg font-sans flex-center gap-2"
+            >
+                <i className="fal fa-laptop-medical text-xl text-red-600" />
+                <span>Book your appointment now</span>
+            </Link>
+            <Swiper
+                modules={[Autoplay]}
+                slidesPerView={1}
+                autoplay={{ delay: 5000 }}
+            >
+                <SwiperSlide>
+                    <Banner1 />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Banner2 />
+                </SwiperSlide>
+            </Swiper>
+        </div>
     );
 };
 
