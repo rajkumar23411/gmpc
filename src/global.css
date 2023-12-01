@@ -150,3 +150,7 @@
     background: url("/assets/ab-bg-4.svg") center center/cover;
     background-repeat: no-repeat;
 }
+.custom-bg-3 {
+    background: url("/assets/background3.jpg") center center/cover;
+    background-repeat: no-repeat;
+}
