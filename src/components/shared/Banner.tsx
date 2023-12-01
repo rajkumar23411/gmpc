@@ -58,7 +58,7 @@ const Banner = () => {
         <Swiper
             modules={[Autoplay]}
             slidesPerView={1}
-            autoplay={{ delay: 10000 }}
+            autoplay={{ delay: 8000 }}
         >
             <SwiperSlide>
                 <Banner1 />
