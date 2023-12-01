@@ -68,7 +68,7 @@ const DashboardAppointments = () => {
                             return (
                                 <TableRow key={indx}>
                                     <TableCell className="font-medium text-red-600 ">
-                                        {data.time} at {data.date}
+                                        {data.time} {data.date}
                                     </TableCell>
                                     <TableCell className="font-medium">
                                         {data.name}
