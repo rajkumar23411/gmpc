@@ -49,7 +49,7 @@ const AboutUs = () => {
             <PageHeading heading="About us" />
             <div className="p-5 md:p-15 lg:p-20 w-full flex flex-col gap-20 md:gap-16">
                 <div className="w-full">
-                    <TopicHeading heading="About our founder" />
+                    <TopicHeading heading="About Our Founder cum CEO" />
                     <div className="flex flex-col mt-10">
                         <div className="first-para flex flex-col md:flex-row md:items-start items-center">
                             <div className="w-max md:px-6">
