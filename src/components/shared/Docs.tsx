@@ -17,7 +17,7 @@ const DocCard = ({
     bgCover?: boolean;
 }) => {
     return (
-        <div className="w-full lg:w-72 flex-center flex-col bg-white p-2 place-content-center rounded-lg overflow-hidden shadow-lg z-10 hover:scale-110 hover:shadow-xl hover:shadow-gray-400 hover:border hover:border-green-300 hover:z-20 hover:-translate-y-10 transition-all duration-200 ease-in-out">
+        <div className="w-full lg:w-full flex-center flex-col bg-white p-2 place-content-center rounded-lg overflow-hidden shadow-lg z-10 hover:scale-110 hover:shadow-xl hover:shadow-gray-400 hover:border hover:border-green-300 hover:z-20 hover:-translate-y-10 transition-all duration-200 ease-in-out">
             <div className="w-full h-56 lg:h-64 rounded-lg overflow-hidden">
                 <img
                     src={src}
@@ -43,7 +43,7 @@ const Docs = () => {
             <h1 className="text-4xl md:text-5xl text-main">
                 Meet our experts!
             </h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:flex-center gap-4 mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 gap-4 mt-10">
                 {/* <div className="flex gap-20"> */}
                 <DocCard
                     src={DrSubham}

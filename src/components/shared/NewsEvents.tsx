@@ -14,7 +14,7 @@ const NewsEventsCard = ({
     date: string;
 }) => {
     return (
-        <div className="h-max w-full md:w-72 lg:w-96 bg-white drop-shadow-lg rounded-lg overflow-hidden">
+        <div className="h-max w-full md:w-72 lg:w-[25rem] bg-white drop-shadow-lg rounded-lg overflow-hidden">
             <img
                 src={imageSrc}
                 alt="gmpc"
@@ -42,7 +42,7 @@ const NewsEvents = () => {
                     Our Top Stories.
                 </h1>
             </div>
-            <div className="px-4 py-10 md:p-8">
+            <div className="px-4 py-10 md:p-8 ">
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     navigation
@@ -53,6 +53,9 @@ const NewsEvents = () => {
                             slidesPerView: 2,
                         },
                         1024: {
+                            slidesPerView: 2,
+                        },
+                        1280: {
                             slidesPerView: 3,
                         },
                     }}

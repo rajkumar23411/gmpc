@@ -14,6 +14,7 @@ import Contact from "./_root/pages/Contact";
 import DashboardLayout from "./_root/dashboard/DashboardLayout";
 import DashboardAppointments from "./_root/dashboard/pages/DashboardAppointments";
 import DashboardQueries from "./_root/dashboard/pages/DashboardQueries";
+import Staff from "./_root/pages/Staff";
 
 const App = () => {
     return (
@@ -26,6 +27,7 @@ const App = () => {
                     <Route path="/care" element={<PatientsCare />} />
                     <Route path="/appointment" element={<Appointment />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/gmpc-staff" element={<Staff />} />
                 </Route>
                 <Route element={<AuthLayout />}>
                     <Route path="/admin/login" element={<SignInForm />} />
