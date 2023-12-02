@@ -15,8 +15,8 @@ const AuthSpeech = () => {
                     provide exceptional healthcare service to our valued
                     patients. Our dedicated team of experienced doctors and
                     medical professionals is here to ensure your well-being and
-                    address all your healthcare needs.GMP&C is located on a
-                    hassle free connectivity at Kalabari, Gohpur, Biswantha
+                    address all your healthcare needs. GMPC is located on a
+                    hassle free connectivity at Kalabari, Gohpur, Biswanth
                     Assam. We believe that a serene environment plays a crucial
                     role in the healing process, ensuring a peaceful experience
                     during your visit. We look forward to your continued support

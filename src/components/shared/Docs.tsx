@@ -46,26 +46,12 @@ const Docs = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:flex-center gap-4 mt-10">
                 {/* <div className="flex gap-20"> */}
                 <DocCard
-                    src={DrMahesh}
-                    name="Dr. Manash Borah"
-                    education="MBBS"
-                    speciality="General Physician"
-                />
-                <DocCard
                     src={DrSubham}
                     name="Dr. Subham Chaudhari"
                     education="MBBS (Gold Medalist)"
                     speciality="MD (Medicine)"
                     bgCover={true}
                 />
-                <DocCard
-                    src={DrAJ}
-                    name="Dr. A. J. Mahin Choudhury"
-                    education="MBBS"
-                    speciality="General Physician"
-                />
-                {/* </div> */}
-                {/* <div className="flex gap-20"> */}
                 <DocCard
                     src={DrRidip}
                     name="Dr. Ridip Saikia"
@@ -74,12 +60,24 @@ const Docs = () => {
                     bgCover={true}
                 />
                 <DocCard
+                    src={DrMahesh}
+                    name="Dr. Manash Borah"
+                    education="MBBS"
+                    speciality="General Physician"
+                />
+                <DocCard
+                    src={DrAJ}
+                    name="Dr. A. J. Mahin Choudhury"
+                    education="MBBS"
+                    speciality="General Physician"
+                />
+                {/* </div> */}
+                <DocCard
                     src={DrAditi}
                     name="Dr. Aditi Thakuria"
                     education="MBBS"
                     speciality="General Physician"
                 />
-                {/* </div> */}
             </div>
         </div>
     );

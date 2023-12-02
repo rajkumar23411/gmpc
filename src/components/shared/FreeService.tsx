@@ -7,7 +7,7 @@ const FreeService = () => {
                 </p>
                 <h1 className="uppercase text-white text-3xl md:text-4xl lg:text-5xl">
                     Every month we are providing free treatment to patient over
-                    60 years age.
+                    60 years of age & economically weaker individuals.
                 </h1>
             </div>
         </div>
