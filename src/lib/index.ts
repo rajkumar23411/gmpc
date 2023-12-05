@@ -41,7 +41,7 @@ export const socialTags = [
     },
     {
         iconName: "fab fa-whatsapp",
-        link: "https://wa.me/6003613726",
+        link: "https://wa.me/6000453938",
     },
     {
         iconName: "fab fa-twitter",
