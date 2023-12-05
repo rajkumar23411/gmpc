@@ -86,9 +86,14 @@ export const gmpcStuff = [
         position: "Head Lab Technician",
     },
     {
-        name: "Miss Ester Jura",
+        name: "Miss Ester Jurai",
         src: "/assets/avatar-female.jpg",
         position: "Asstt. Lab Technician",
+    },
+    {
+        name: "Miss Puja Borah",
+        src: "/assets/stuff/rec-1.jpg",
+        position: "Receptionist",
     },
     {
         name: "Mr. Khageswer Borah",
@@ -99,11 +104,6 @@ export const gmpcStuff = [
         name: "Mr. Utpal Borah",
         src: "/assets/stuff/mng-2.jpg",
         position: "Management & Marketing",
-    },
-    {
-        name: "Miss Puja Borah",
-        src: "/assets/stuff/rec-1.jpg",
-        position: "Receptionist",
     },
     {
         name: "Mrs. Sabita Dutta",
