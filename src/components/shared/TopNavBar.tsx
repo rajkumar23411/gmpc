@@ -43,7 +43,7 @@ const TopNavBar = () => {
                 hide ? "h-0 opacity-0" : "flex-between"
             } px-6 py-2 lg:px-8 bg-red-300 bg-opacity-20 transition-all duration-150 ease-in-out`}
         >
-            <div className="flex gap-3 lg:gap-4">
+            <div className="flex gap-2 md:gap-3 lg:gap-4">
                 {socialTags.map((tag, index) => (
                     <SocialIconBox
                         key={index}
@@ -52,7 +52,7 @@ const TopNavBar = () => {
                     />
                 ))}
             </div>
-            <div className="flex items-center justify-end gap-4">
+            <div className="flex items-center justify-end gap-2 md:gap-3 lg:gap-4">
                 <a href={"tel:+916000453938"} className="flex-center gap-2">
                     <div className=" text-white w-6 h-6 md:w-7 md:h-7 bg-red-500 rounded-full grid-center cursor-pointer hover:animate-wiggle-more animate-thrice duration-100">
                         <i className="fas fa-phone-alt text-xs md:text-sm lg:text-base" />
@@ -63,7 +63,7 @@ const TopNavBar = () => {
                 </a>
                 <Link
                     to={"/admin/login"}
-                    className="uppercase text-main text-xs"
+                    className="uppercase text-main text-xs md:text-base font-medium cursor-pointer hover:text-red-600 transition-all duration-150 ease-in-out"
                 >
                     ADMIN
                 </Link>
