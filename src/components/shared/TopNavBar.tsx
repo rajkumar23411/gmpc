@@ -63,7 +63,7 @@ const TopNavBar = () => {
                 </a>
                 <Link
                     to={"/admin/login"}
-                    className="hidden md:block bg-main text-white px-2 py-1 text-sm rounded-sm cursor-pointer"
+                    className="uppercase text-main text-xs"
                 >
                     ADMIN
                 </Link>
