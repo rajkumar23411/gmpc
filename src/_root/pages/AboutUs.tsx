@@ -1,3 +1,4 @@
+import Gallery from "@/components/shared/Gallery";
 import PageHeading from "@/components/shared/PageHeading";
 import TopicHeading from "@/components/shared/TopicHeading";
 import { useState, useEffect } from "react";
@@ -199,73 +200,7 @@ const AboutUs = () => {
                         </p>
                     </div>
                 </div>
-                <div>
-                    <TopicHeading heading="Gallary" />
-                    <div className="grid grid-cols-1 md:grid-cols-3 mt-10">
-                        <ImageBox
-                            alt="team"
-                            src="/assets/team.jpg"
-                            text="TEAM GMPC"
-                            classes="col-span-2"
-                        />
-                        <ImageBox
-                            alt="team"
-                            src="/assets/img-reception.jpg"
-                            text="RECEPTION"
-                        />
-                        <ImageBox
-                            alt="team"
-                            src="/assets/img-dental-1.jpg"
-                            text="DENTAL CLINIC"
-                        />
-                        <ImageBox
-                            alt="team"
-                            src="/assets/img-emergency-service.jpg"
-                            text="EMERGENCY SERVICE"
-                        />
-                        <ImageBox
-                            alt="gmpc"
-                            src="/assets/img-gmpc-day.jpg"
-                            text="GMPC"
-                        />
-                        <ImageBox
-                            alt="gmpc night view"
-                            src="/assets/img-gmpc-night.jpg"
-                            text="GMPC NIGHT VIEW"
-                        />
-                        <ImageBox
-                            alt="gmpc OPD"
-                            src="/assets/img-opd-1.jpg"
-                            text="OPD"
-                        />
-                        <ImageBox
-                            alt="gmpc OPD"
-                            src="/assets/img-opd-2.jpg"
-                            text="OPD"
-                        />
-                        <ImageBox
-                            alt="gmpc pharmacy"
-                            src="/assets/img-pharmacy-entry.jpg"
-                            text="PHARMACY ENTRY"
-                        />
-                        <ImageBox
-                            alt="gmpc pharmacy"
-                            src="/assets/img-pharmacy-view-2.jpg"
-                            text="PHARMACY"
-                        />
-                        <ImageBox
-                            alt="gmpc pharmacy"
-                            src="/assets/img-pharmacy-view.jpg"
-                            text="PHARMACY ENTRY"
-                        />
-                        <ImageBox
-                            alt="gmpc diwali"
-                            src="/assets/img-gmpc-diwali.jpg"
-                            text="DIWALI CELEBRATION"
-                            classes="col-span-3"
-                        />
-                    </div>
-                </div>
+                <Gallery />
             </div>
         </section>
     );
