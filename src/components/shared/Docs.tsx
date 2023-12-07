@@ -17,7 +17,7 @@ const DocCard = ({
     bgCover?: boolean;
 }) => {
     return (
-        <div className="w-full lg:w-full flex-center flex-col bg-white p-2 place-content-center rounded-lg overflow-hidden shadow-lg z-10 hover:scale-110 hover:shadow-xl hover:shadow-gray-400 hover:border hover:border-green-300 hover:z-20 hover:-translate-y-10 transition-all duration-200 ease-in-out">
+        <div className="w-full lg:w-full flex-center flex-col bg-white p-2 place-content-center rounded-lg overflow-hidden docCard relative z-10 transition-all duration-200 ease-in-out">
             <div className="w-full h-56 lg:h-64 rounded-lg overflow-hidden">
                 <img
                     src={src}

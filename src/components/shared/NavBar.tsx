@@ -11,7 +11,6 @@ const NavBar = () => {
     const location = useLocation().pathname;
     // const [isWindowScrolled, setIsWindowScrolled] = useState(false);
     // const isWindowScrolledRef = useRef(isWindowScrolled);
-
     useEffect(() => {
         // const handleScroll = () => {
         //     if (window.scrollY > 1) {
@@ -57,7 +56,7 @@ const NavBar = () => {
                     className={`fal fa-bars text-3xl md:hidden`}
                     onClick={() => setIsBarsClicked(true)}
                 ></p>
-                <div className="hidden md:flex items-center md:gap-6 gap-8">
+                <div className="hidden md:flex-center md:gap-6 lg:gap-8">
                     {NavTags.map((tag, index) => {
                         const isActive = location === tag.href;
                         return (
@@ -65,10 +64,10 @@ const NavBar = () => {
                                 to={tag.href}
                                 key={index}
                                 className={`${
-                                    isActive && "text-red-600 font-medium"
-                                } flex items-center justify-center gap-2 cursor-pointer hover:text-red-600 text-main transition-all duration-150`}
+                                    isActive &&
+                                    "before:w-10 text-rose-600 font-medium"
+                                } text-main flex-center relative before:absolute before:content-[''] before:-bottom-1 before:left-0 before:h-1 before:w-0 hover:before:w-10 hover:text-rose-600 before:bg-rose-500 before:rounded-b-lg before:transition-all before:duration-150 before:ease-in-out`}
                             >
-                                {isActive && <Circle />}
                                 {tag.name}
                             </NavLink>
                         );
