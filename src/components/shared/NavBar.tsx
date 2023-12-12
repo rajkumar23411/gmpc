@@ -3,9 +3,6 @@ import MobileMenu from "./MobileMenu";
 import { NavTags } from "@/lib";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
-const Circle = () => {
-    return <div className="h-2 w-2 bg-red-600 rounded-full"></div>;
-};
 const NavBar = () => {
     const [isBarsClicked, setIsBarsClicked] = useState(false);
     const location = useLocation().pathname;
