@@ -172,8 +172,9 @@ export const gmpcDoctors = [
     },
     {
         name: "Dr. Manoj Kumar Mili",
-        education: "MBBS, MO",
-        Speciality: "General Physician",
+        education: "MBBS, MS, FAMS, FIAGES",
+        Speciality:
+            "General & Laparoscopic surgeon, GL Endoscopist-Diagonostic & Therapeutic",
         timings: ["Call for an appointment"],
         image: DrManoj,
     },
@@ -193,7 +194,7 @@ export const gmpcDoctors = [
     },
     {
         name: "Dr. Kundan Karan",
-        education: "MBBS",
+        education: "MBBS, MS",
         Speciality: "Eye Specalist",
         timings: ["Call for an appointment"],
         image: DrNA,

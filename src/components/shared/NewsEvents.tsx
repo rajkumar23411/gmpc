@@ -63,7 +63,7 @@ const NewsEvents = () => {
                         <NewsEventsCard
                             imageSrc="/assets/event-mla.jpg"
                             text="
-                           Mr. Utpal Borah, the esteemed MLA of Gahpur, graciously inaugurated the state-of-the-art ultrasound service at GMPC, marking a significant advancement in the region's healthcare facilities."
+                           Mr. Utpal Borah, the esteemed MLA of Gohpur, graciously inaugurated the state-of-the-art ultrasound service at GMPC, marking a significant advancement in the region's healthcare facilities."
                             date="23-04-2024"
                         />
                     </SwiperSlide>
