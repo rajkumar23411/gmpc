@@ -39,17 +39,17 @@ const QuickFacts = () => {
 
             <div className="pt-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 <FactsBox
-                    amount="1000+"
+                    amount="10,000+"
                     icon="fad fa-laugh-beam"
                     heading="Happy patients"
                 />
                 <FactsBox
-                    amount="20"
+                    amount="20+"
                     icon="fad fa-stethoscope"
                     heading="Medical Specialist"
                 />
                 <FactsBox
-                    amount="1.5+"
+                    amount="2.5+"
                     icon="fad fa-lightbulb-on"
                     heading="Experience"
                 />

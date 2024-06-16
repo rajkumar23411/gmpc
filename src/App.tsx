@@ -15,6 +15,7 @@ import DashboardLayout from "./_root/dashboard/DashboardLayout";
 import DashboardAppointments from "./_root/dashboard/pages/DashboardAppointments";
 import DashboardQueries from "./_root/dashboard/pages/DashboardQueries";
 import Staff from "./_root/pages/Staff";
+import DocTimings from "./_root/pages/DocTimings";
 
 const App = () => {
     return (
@@ -28,6 +29,7 @@ const App = () => {
                     <Route path="/appointment" element={<Appointment />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/gmpc-staff" element={<Staff />} />
+                    <Route path="/doctor-timing" element={<DocTimings />} />
                 </Route>
                 <Route element={<AuthLayout />}>
                     <Route path="/admin/login" element={<SignInForm />} />

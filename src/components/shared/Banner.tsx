@@ -4,6 +4,25 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
+const Banner3 = () => {
+    return (
+        <div className="h-[38rem] w-full flex items-center banner-3">
+            <div className="flex flex-col pl-10 lg:pl-28">
+                <h1 className="text-white text-6xl md:text-7xl lg:text-8xl font-bold">
+                    Moving one more <br />{" "}
+                    <span className="text-red-500">step</span> ahead,
+                </h1>
+                <h1 className="text-teal-500 text-6xl md:text-7xl lg:text-8xl font-bold">
+                    For your <br /> health
+                </h1>
+                <h2 className="text-xl md:text-3xl mt-4 text-yellow-500">
+                    Beacuse we do care of your health!
+                </h2>
+            </div>
+        </div>
+    );
+};
 const Banner2 = () => {
     return (
         <div className="h-[38rem] w-full flex items-center banner-2">
@@ -73,6 +92,9 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Banner2 />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Banner3 />
                 </SwiperSlide>
             </Swiper>
         </div>

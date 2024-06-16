@@ -95,6 +95,10 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url("/assets/banner-2.jpg") center center/cover;
 }
+.banner-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/assets/banner-3.jpg") center center/cover;
+}
 .founder-bg {
     background: url("/assets/ab-bg-1.jpg") center center/cover;
 }
@@ -176,4 +180,54 @@
 .docCard:hover:before {
     top: 0;
     right: 0;
+}
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+    width: 80px;
+    height: 100px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: #fff !important;
+    color: red !important;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 450px) {
+    .slick-arrow.slick-prev,
+    .slick-arrow.slick-next {
+        width: 36px;
+        height: 60px;
+        backdrop-filter: blur(0px);
+        background-color: white;
+    }
+}
+.slick-arrow.slick-prev {
+    left: -2.8rem !important;
+}
+.slick-next {
+    right: -2.7rem !important;
+}
+.slick-prev::before {
+    content: "Prev" !important;
+    font-family: sans-serif !important;
+    color: rgba(231, 76, 60, 1) !important;
+    transform: rotate(90deg);
+    font-size: 12px !important;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.slick-next::before {
+    content: "Next" !important;
+    font-family: sans-serif !important;
+    color: rgba(231, 76, 60, 1) !important;
+    transform: rotate(-90deg);
+    font-size: 12px !important;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }

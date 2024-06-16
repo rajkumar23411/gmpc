@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -44,10 +44,9 @@ const NewsEvents = () => {
             </div>
             <div className="px-4 py-10 md:p-8 ">
                 <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
+                    modules={[Navigation, Pagination]}
                     navigation
                     slidesPerView={1}
-                    autoplay={{ delay: 10000 }}
                     breakpoints={{
                         650: {
                             slidesPerView: 2,
@@ -60,6 +59,14 @@ const NewsEvents = () => {
                         },
                     }}
                 >
+                    <SwiperSlide>
+                        <NewsEventsCard
+                            imageSrc="/assets/event-mla.jpg"
+                            text="
+                           Mr. Utpal Borah, the esteemed MLA of Gahpur, graciously inaugurated the state-of-the-art ultrasound service at GMPC, marking a significant advancement in the region's healthcare facilities."
+                            date="23-04-2024"
+                        />
+                    </SwiperSlide>
                     <SwiperSlide>
                         <NewsEventsCard
                             imageSrc="/assets/bg-health-check.jpg"
